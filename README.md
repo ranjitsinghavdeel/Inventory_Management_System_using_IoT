@@ -18,8 +18,12 @@ Hardware:
 3) Ultrasonic sensor
 4) RFID tags
 5) RFID reader
+
 Software:
 1) Arduino IDE
 2) embedded C
 3) ThingSpeak IoT platform
 4) Telegram chatbot
+# Working 
+- The system operates based on the input from both the modules. Alert function of the system is set such that if Ultrasonic sensor reads a distance greater than thresold (indicating stock level is moving further away from sensor that is approaching low levels), it is programmed to give the user/ operator alert through telegram chatbot. 
+- The second module is based on pair of RFID readers and RFID tags attached to stock/ inventory/ products. In a real-life conveyor belt these two RFID readers will be attached to end points that is entery and exit respectively. Therefore any stock entering and exiting the system will be scanned twice one for entry and one for exit by respective readers. 
